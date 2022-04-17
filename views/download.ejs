@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="formInput">
+        <h1>CSV File Download</h1>
+  
+        <div>
+          <p>List country and city names whose PM 2.5 values are greater than 50
+            in 2015.</p>
+  
+          <form action="/downloadFileA" method="get" >
+            <button type="submit">Download</button>
+          </form>
+        </div>
+  
+        <br />
+        <div><p>Calculate the AVG(PM 2.5) by country (show the results in a
+            decreasing order).</p>
+          <form action="/downloadFileB" method="get">
+            <button type="submit">Download</button>
+          </form>
+  
+        </div>
+        <br />
+        <div><p>Given a "country_input" from the user, show a historical PM 2.5
+            values by year.</p>
+  
+          <form action="/downloadFileC" method="get">
+            <input name="country" type="text" placeholder="country" />
+            <button type="submit">Download</button>
+          </form>
+  
+        </div>
+        <br />
+        <div><p>Given a "year_input" and an input of "color_pm25" level of health
+            concern from the user, calculate a total of the affected population
+            (in number).</p>
+  
+          <form action="/downloadFileD" method="get">
+            <input name="year" type="text" placeholder="year" />
+            <input name="color" type="text" placeholder="color" />
+            <button type="submit">Download</button>
+          </form>
+  
+        </div>
+  
+      </div>
+  
+</body>
+</html>
